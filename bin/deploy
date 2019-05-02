@@ -30,13 +30,6 @@ git push -f -q origin gh-pages
 # Move back to previous branch.
 git checkout -
 
-# merge gh-pages and master
-git checkout gh-pages
-git merge --strategy=ours master
-git checkout master
-git merge gh-pages
-
-git checkout source
 echo "Deployed Successfully!"
 
 exit 0
