@@ -34,6 +34,7 @@ git checkout gh-pages
 git merge --strategy=ours master
 git checkout master
 git merge gh-pages
+git push origin master
 git checkout source
 
 echo "Deployed Successfully!"
