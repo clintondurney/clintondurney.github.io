@@ -11,7 +11,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url: 
-baseurl:  # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 last_updated: May 2, 2019 
 
 # -----------------------------------------------------------------------------

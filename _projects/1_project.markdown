@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Project 1
+title: Drosophila Dorsal Closure 
 description: a project with a background image
 img: /assets/img/12.jpg
 ---
