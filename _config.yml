@@ -1,120 +1,111 @@
-# main text of home
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
 name: Clinton H. Durney 
-bio: PhD Candidate, University of British Columbia, Mathematics Dept.  
-
-# twitter summary info
-description: 
-
-# if it's an external image, update below for true
-# better with square images
-external-image: false
-picture: assets/images/me.jpg
-
-# If you want to include your resume, set to true
-# and specify source (external or local).
-resume: true
-resume-external: true
-resume-url: https://google.com/?q=my+resume
+email: cdurney@math.ubc.ca 
+description: > # this means to ignore newlines until "url:"
+  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+footer_text: >
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url: clintondurney.github.io 
-# your url: http://USERNAME.github.io
+baseurl: /about # the subpath of your site, e.g. /blog/
+last_updated: May 2, 2019 
 
-permalink: /:title/
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+github_username: clintondurney 
+twitter_username: # put your twitter username
+linkedin_username: # put your linkedin username
+scholar_authorid: /citations?user=Yruxcr8AAAAJ&hl=en 
+contact_note: Best reached by email. 
 
-# To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+blog_name: 
+blog_description: 
 
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
+# Pagination
+paginate: 4
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
 
-# if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
 
-# if you don't have any of social below, comment the line
-#facebook: myfacebook
-#twitter: mytwitter
-google: citations?user=Yruxcr8AAAAJ&hl=en 
-# instagram: myinstagram
-# pinterest: mypinterest
-# linkedin: mylinkedin
-# youtube: myyoutube
-# spotify: myspotify
-github: clintondurney 
-gitlab: cdurney 
-# lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-#medium: medium
-# vimeo: myvimeo
-# lanyrd: mylanyrd
-email: cdurney@math.ubc.ca 
+# Comments
+disqus_shortname: # put your disqus shortname
 
-authors:
-    johndoe:
-        name: Clinton H. Durney 
-        bio: PhD Candidate, University of British Columbia, Mathematics Dept. 
-        external-image: false
-        picture: assets/images/me.jpg
-        twitter: 
-    jamesfoster:
-        name: Clinton H. Durney 
-        bio: PhD Candidate, University of British Columbia, Mathematics Dept. 
-        external-image: false
-        picture: assets/images/me.jpg
-        twitter: 
+# Optional features
+show_social_icons:  false
+enable_anchorjs:    false
+enable_katex:       true
 
-# do you want a larger site? change the option below
-# options: [normal, large] | default: normal
-# normal = 560px / large = 810px
-width: normal
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
 
-# if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
+news_limit: 5
 
-# if you don't need projects, comment the *projects* configs below
-projects: true
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
 
-# if you don't need "about" or "blog", comment them out below
-about: true
-blog: true
+# Build settings
+markdown: kramdown
+highlighter: pygments
 
-# do you want to show the "read time" of the posts?
-read-time: true
+# Includes
+include: ['_pages']
 
-# do you want to show the "tags" inside the posts?
-show-tags: true
+# Gems
+gems:
+    - jekyll-paginate
+    - jekyll/scholar
+    - jemoji
 
-# related posts inside a post?
-related: true
+# Jekyll-Scholar
+scholar:
 
-# Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
+  last_name: Durney 
 
-# show author block at the end of a post ?
-show-author: true
+  style: apa
+  locale: en
 
-# do you want some animations?
-animation: true
+  sort_by: year
+  order: descending
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-admin
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
 
-jekyll-mentions:
-    base_url: https://github.com
+  replace_strings: true
+  join_strings: true
 
-compress_html:
-    ignore:
-        envs:
-        - development
-        - stage
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
 
-exclude: ["travis.sh", "Rakefile", "README.md", "Gemfile", "Gemfile.lock", "FAQ.md"]
+  query: "@*"
+
+# -----------------------------------------------------------------------------
+# Other settings
+# -----------------------------------------------------------------------------
+jquery_version: "1.12.4"
+katex_version: "0.7.1"
+anchorjs_version: "3.2.2"
