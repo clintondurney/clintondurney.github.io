@@ -7,6 +7,10 @@ set -e
 
 echo "Started deploying"
 
+# update source files (need to already be on branch source)
+git commit -am "upload before deploying"
+git push origin source
+
 # Checkout gh-pages branch.
 if [ `git branch | grep gh-pages` ]
 then
