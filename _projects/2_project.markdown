@@ -1,6 +1,6 @@
 ---
 layout: page
-title: *Drosophila* Salivary Gland Invagination 
+title: Drosophila Salivary Gland Invagination 
 description: a project with a background image
 img: /assets/img/2.jpg
 ---
