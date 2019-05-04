@@ -20,7 +20,7 @@ description:
 3. Math 1157, Mathematical Modelling for the Biological Sciences
 4. Math 1151, Calculus I
 
-### Varee International School
+### Varee International School, Chiang Mai, Thailand
 
 I was the instructor of AS and A level **Mathematics** and **Physics** syllabi of the Cambridge International Examinations (CIE). I was solely responsible for the development and instruction of the curriculum. 
 
