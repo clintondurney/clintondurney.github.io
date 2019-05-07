@@ -2,10 +2,10 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: 
+description: The following courses listed are TAships that had an instructional component to them such as leading a tutorial, workshop or recitation. 
 ---
 
-### University of British Columbia
+### University of British Columbia, Vancouver, BC
 
 1. Math 184, Differential Calculus with Applications to Commerce and Social Sciences 
 2. Math 210, Introduction to Mathematical Computing 
@@ -13,7 +13,7 @@ description:
 4. Math 253/MECH 2, Multivariable Calculus
 5. Math 255/256, Differential Equations
 
-### The Ohio State University
+### The Ohio State University, Columbus, OH
 
 1. Math 1131, Calculus for Business
 2. Math 1156, Calculus for the Biological Sciences

@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
-inline: true
+date: 2019-07-21 15:59:00-0400
+inline: true 
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+[SMB 2019: Society for Mathematical Biology Annual Meeting](http://www.smb2019.org/index_e.php)
+
