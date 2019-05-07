@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: The following courses listed are TAships that had an instructional component to them such as leading a tutorial, workshop or recitation. 
+description: The following courses listed are TA-ships that had an instructional component to them such as leading a tutorial, workshop or recitation. 
 ---
 
 ### University of British Columbia, Vancouver, BC
