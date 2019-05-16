@@ -47,6 +47,12 @@
     {% elsif entry.type == "inproceedings" %}
       <em>In {{entry.booktitle}}</em>
     {% endif %}
+    {% if entry.volume %}
+      {{entry.volume}}
+    {% endif %}
+    {% if entry.pages %}
+      {{entry.pages}}
+    {% endif %}
     {% if entry.year %}
       {{entry.year}}
     {% endif %}
@@ -55,7 +61,10 @@
 
   <span class="links">
   {% if entry.abstract %}
-    [<a class="abstract">Abs</a>]
+    [<a class="abstract">abs</a>]
+  {% endif %}
+  {% if entry.doi %}
+  [<a href="{{ entry.doi | prepend: 'http://doi.org/' }}">doi</a>]
   {% endif %}
   {% if entry.arxiv %}
     [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
@@ -87,3 +96,9 @@
   </span>
   {% endif %}
 </div>
+
+
+
+
+
+

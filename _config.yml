@@ -84,7 +84,7 @@ scholar:
 
   last_name: Durney 
 
-  style: apa
+  style: biophysical-journal 
   locale: en
 
   sort_by: year
@@ -100,7 +100,6 @@ scholar:
   details_dir: bibliography
   details_layout: bibtex.html
   details_link: Details
-
   query: "@*"
 
 # -----------------------------------------------------------------------------
