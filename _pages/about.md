@@ -15,7 +15,7 @@ profile:
 news: true
 social: true
 ---
-I am a PhD candidate in Applied Mathematics at the University of British Columbia working under the supervision of Dr. James J. Feng.  My research focus is Mathematical Biology where I am currently studying cell and tissue scale level mechanics of the developing  *Drosophila* embryo.  I utilize a number of techniques including mathematical modelling, computational biology and analysis. I hold affiliations with the Mathematics Department and the Institute of Applied Mathematics. 
+I am a PhD candidate in Applied Mathematics at the University of British Columbia working under the supervision of [Dr. James J. Feng](https://www.math.ubc.ca/~jfeng/).  My research focus is Mathematical Biology where I am currently studying cell and tissue scale level mechanics of the developing  *Drosophila* embryo.  I utilize a number of techniques including mathematical modelling, computational biology and analysis. I hold affiliations with the [Mathematics Department](http://www.math.ubc.ca) and the [Institute of Applied Mathematics](https://www.iam.ubc.ca/). 
 
 Prior to UBC, I earned my MS in Mathematics at The Ohio State University working with Dr. Chuan Xue.  And prior to that I earned BS degrees in Physics and Mathematics at Virginia Tech.  While at VT, I did undergraduate research with Dr. Michel Pleimling and Dr. Royce K.P. Zia of the VT Physics Dept. 
 
