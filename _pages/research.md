@@ -21,10 +21,10 @@ The following figures are schematics of the mechanical model and the intracellul
 
 **Salivary Gland Tubologenesis**
 
-In this work, I extend a 2D vertex model to a 3D process of salivary gland (SG) tubulogenesis.  During SG formation, complex cell shape changes and coordinated mechancial differences results in the formation of invaginated tubes within the embryo. The exact cause of the out-of-plane bending is still unknown as well as the various drivers of invagination.  This work seeks a hypothesis of gland formation.
+My second project aims to develop a comprehensive 3D vertex framework for Drosophila salivary gland formation. Most tissue morphogenetic problems involve 3D structures with out-of-plane dynamics that cannot be simplified into planar problems. Due to the complex cellular geometries within tissues and the computational complexity that lies therein, very few 3D models exist in practice. During salivary gland formation, a tubular structure is formed from a simple planar epithelial tissue. The goal of this work is to provide a mechanistic explanation for how anisotropic apical constriction of the flat epithelial sheet causes buckling into an invaginated tubular structure. To answer this, I developed a novel 3D vertex model in which cells are generalized to polyhedrons which is able to account for descriptions of cellular morphologies in 3D and physical forces such as pressure due to the cytosol.
 
+The following figure shows how cells are modelled in a 3D vertex based model. 
 
-
-
+<img src="/assets/img/3D.png" alt="drawing" width="300"/>
 
 
