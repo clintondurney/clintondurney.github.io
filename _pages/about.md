@@ -2,24 +2,32 @@
 layout: about
 permalink: /
 title: <strong>Clinton</strong> H. Durney 
-description: <a href="www.math.ubc.ca">University of British Columbia</a>
+description: <a href="https://www.jic.ac.uk/people/clinton-h-durney/">John Innes Centre</a>
 
 profile:
   align: right
   image: prof_pic.jpg 
-  address: >
-    <p>1984 Mathematics Road </p>
-    <p>Vancouver, BC V6T 1Z2</p>
-    <p>Canada</p>
 
-news: true
 social: true
 ---
-I earned my PhD in Applied Mathematics at the University of British Columbia working under the supervision of [Dr. James J. Feng](https://www.math.ubc.ca/~jfeng/).  My research focus is Mathematical Biology where I am currently studying cell and tissue scale level mechanics of the developing  *Drosophila* embryo.  I utilize a number of techniques including mathematical modelling, computational biology and analysis. I hold affiliations with the [Mathematics Department](http://www.math.ubc.ca) and the [Institute of Applied Mathematics](https://www.iam.ubc.ca/). 
+I am a computational scientist working at the interface of computation, applied mathematics and biology. I develop and utilize computational tools to understand the novel aspects of biological systems.
 
-Prior to UBC, I earned my MS in Mathematics at The Ohio State University working with [Dr. Chuan Xue](https://people.math.osu.edu/xue.41/) writing a thesis on multi-scale modelling of bacterial chemotaxis.  I earned BS degrees in Physics and Mathematics at Virginia Tech.  While at VT, I did research with [Dr. Michel Pleimling](http://www1.phys.vt.edu/~pleim/main.html) and [Dr. Royce K.P. Zia](http://www1.phys.vt.edu/~rkpzia/HmPg.html) of the VT Physics Dept. 
+#### Experience
+* Postdoctoral Scientist, Computational and Systems Biology
+John Innes Centre, Norwich, UK
 
-In my spare time, I can often be found running the streets of Vancouver or the trails of the North Shore mountains. Below are my weekly stats!  
+#### Education
+* Ph.D. in Mathematics, 2020  
+University of British Columbia, Vancouver, BC  
+Mentor: James J. Feng
+* M.S. in Mathematics, 2013  
+The Ohio State University, Columbus, OH
+* B.S. in Physics, 2011  
+B.S. in Mathematics, 2011   
+Virginia Polytechnic and State University (Virginia Tech), Blacksburg, VA
 
-<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/4916532/activity-summary/b4816a1b1539fa082d3d43dbd97dfb403b7c1511'></iframe>
+
+
+
+
 
