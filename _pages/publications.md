@@ -4,7 +4,7 @@ permalink: /publications/
 title: publications
 ---
 
-8. __Durney, C.H.__\*, Wilson, M.J.\*, McGregor, S., Armand, J., Smith, R.S., Gray, J.E., Morris, R.J., Fleming, A.J., Grasses exploit geometry to achieve improved guard cell dynamics. *Current Biology* (submitted 2023)
+8. __Durney, C.H.__\*, Wilson, M.J.\*, McGregor, S., Armand, J., Smith, R.S., Gray, J.E., Morris, R.J., Fleming, A.J., Grasses exploit geometry to achieve improved guard cell dynamics. *Current Biology* (Accepted 2023)
 
 7. Ashour, D.J., __Durney, C.H.__, Herrero, V.J.P., Stevens, T.J., Feng, J.J., and Roper, K., Zasp52 strengthens whole embryo tissue integrity through supracellular actomyosin networks. *Development* 150.7 (2023) 
 
