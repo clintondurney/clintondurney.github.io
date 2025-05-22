@@ -4,6 +4,8 @@ permalink: /publications/
 title: publications
 ---
 
+9. Wilson, M.J., McGregor, S., __Durney, C.H.__, Tomkins, M., Armand, J., Smith, R.S., Gray, J.E., Morris, R.J. and Fleming, A.J., Symplastic guard cell connections buffer pressure fluctuations to promote stomatal function in grasses. New Phytologist, 246: 192-203 (2025)
+
 8. __Durney, C.H.__\*, Wilson, M.J.\*, McGregor, S., Armand, J., Smith, R.S., Gray, J.E., Morris, R.J., Fleming, A.J., Grasses exploit geometry to achieve improved guard cell dynamics. *Current Biology* 33.13 (2023)
 
 7. Ashour, D.J., __Durney, C.H.__, Herrero, V.J.P., Stevens, T.J., Feng, J.J., and Roper, K., Zasp52 strengthens whole embryo tissue integrity through supracellular actomyosin networks. *Development* 150.7 (2023) 
