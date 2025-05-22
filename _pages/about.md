@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Clinton</strong> H. Durney 
-description: <a href="https://www.jic.ac.uk/people/clinton-h-durney/">John Innes Centre</a>
+description: <a href="https://bccrc.ca/">BC Cancer Research Institute</a>
 
 profile:
   align: right
