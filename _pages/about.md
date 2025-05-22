@@ -13,7 +13,7 @@ social: true
 I am a computational scientist working at the interface of computation, applied mathematics and biology. I develop and utilize computational tools to understand the novel aspects of biological systems.
 
 #### Experience
-* Research Methodologist, Integrative Oncology  
+* Research Methodologist, Department of Population Health Sciences
 BC Cancer Research, Vancouver, BC, 2023-
 * Visiting Scientist, Computational and Systems Biology  
 John Innes Centre, Norwich, UK, 2023-2024
