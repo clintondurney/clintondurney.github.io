@@ -16,7 +16,7 @@ I am a computational scientist working at the interface of computation, applied 
 * Research Methodologist, Integrative Oncology  
 BC Cancer Research, Vancouver, BC, 2023-
 * Visiting Scientist, Computational and Systems Biology  
-John Innes Centre, Norwich, UK, 2023-
+John Innes Centre, Norwich, UK, 2023-2024
 * Postdoctoral Scientist, Computational and Systems Biology
 John Innes Centre, Norwich, UK, 2020-2023
 
