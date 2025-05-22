@@ -102,6 +102,12 @@ scholar:
   details_link: Details
   query: "@*"
 
+
+header_pages:
+  - _pages/about.md
+  - _pages/publications.md
+  - cv.html
+
 # -----------------------------------------------------------------------------
 # Other settings
 # -----------------------------------------------------------------------------
