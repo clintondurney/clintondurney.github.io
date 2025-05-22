@@ -4,8 +4,8 @@
 
     {% if page.layout != "about" %}
     <span class="site-title">
-        {% assign name = site.name | split: ' ' %}
-        <strong>{{ name | first }}</strong> {{ name | last }}
+      {% assign name = site.name | split: ' ' %}
+      <strong>{{ name | first }}</strong> {{ name | last }}
     </span>
     {% endif %}
 
@@ -17,13 +17,15 @@
 
         <!-- Blog -->
         <!-- 
-        <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a>
+          <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a>
         -->
         <!-- Pages -->
-        {% for page in site.pages %}
-          {% if page.title and page.url != "/" %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
-          {% endif %}
+
+        {% for path in site.header_pages %}
+        {% assign page = site.pages | where: "path", path | first %}
+        {% if page.title %}
+        <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+        {% endif %}
         {% endfor %}
 
       </div>
