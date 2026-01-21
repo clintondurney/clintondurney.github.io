@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 ---
-11. __Durney, C.H.__, Tawara, A.^, Brauer, M., Atkar-Khattra, S., Myers, R., Meza, R., Lam, S., APEX: A Web-Based Tool for Assessing Long-Term Outdoor PM2.5 Exposure - Brief Report. *Journal of Thoracic Oncology - Clinical Research Reports* (Accepted 2026)
+11. __Durney, C.H.__, Tawara, A.&dagger;, Brauer, M., Atkar-Khattra, S., Myers, R., Meza, R., Lam, S., APEX: A Web-Based Tool for Assessing Long-Term Outdoor PM2.5 Exposure - Brief Report. *Journal of Thoracic Oncology - Clinical Research Reports* (Accepted 2026)
 
 10. __Durney, C.H.__, Meza, R., Jimenez-Mendoza, E., Xu, K., Levy, D.T., Friedman, A.S., Recent trends in sales of electronic nicotine devices and oral nicotine pouches by flavour. *Tobacco Control* (2025)
 
@@ -27,6 +27,7 @@ title: publications
 {:reversed="reversed"}
 
 \* denotes equally contributing authors
-^ denotes undergraduate student under my supervision
+
+&dagger; denotes undergraduate student under my supervision
 
 
