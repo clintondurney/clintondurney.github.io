@@ -3,6 +3,9 @@ layout: page
 permalink: /publications/
 title: publications
 ---
+11. __Durney, C.H.__, Tawara, A., Brauer, M., Atkar-Khattra, S., Myers, R., Meza, R., Lam, S., APEX: A Web-Based Tool for Assessing Long-Term Outdoor PM2.5 Exposure - Brief Report. *Journal of Thoracic Oncology - Clinical Research Reports* (Accepted 2026)
+
+10. __Durney, C.H.__, Meza, R., Jimenez-Mendoza, E., Xu, K., Levy, D.T., Friedman, A.S., Recent trends in sales of electronic nicotine devices and oral nicotine pouches by flavour. *Tobacco Control* (2025)
 
 9. Wilson, M.J., McGregor, S., __Durney, C.H.__, Tomkins, M., Armand, J., Smith, R.S., Gray, J.E., Morris, R.J. and Fleming, A.J., Symplastic guard cell connections buffer pressure fluctuations to promote stomatal function in grasses. New Phytologist, 246: 192-203 (2025)
 
