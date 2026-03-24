@@ -10,7 +10,15 @@ profile:
 
 social: true
 ---
-I am a computational scientist working at the interface of computation, applied mathematics and biology. I develop and utilize computational tools to understand the novel aspects of biological systems.
+I am a computational scientist working at the intersection of applied mathematics, computation, and biology. My work spans mechanistic modeling of biological systems and population-scale epidemiology.
+
+#### Research
+
+- **Computational cell and developmental biology** — Mathematical models of tissue mechanics and morphogenesis, including vertex models of epithelial sheets, PAR protein dynamics in *Drosophila*, and the biophysics of stomatal guard cells in grasses and *Arabidopsis*.
+
+- **Cancer epidemiology and population health** — Methods for evaluating lung cancer screening programs, long-term outdoor air pollution (PM2.5) exposure assessment, and quantitative tools for cancer prevention.
+
+- **Tobacco control** — Analysis of trends in electronic nicotine delivery systems and oral nicotine pouches, with focus on flavored products and youth-facing marketing.
 
 #### Experience
 * Research Methodologist, Department of Population Health Sciences
