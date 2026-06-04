@@ -73,10 +73,10 @@ highlighter: pygments
 # Includes
 include: ['_pages']
 
-# Gems
-gems:
+# Plugins
+plugins:
     - jekyll-paginate
-    - jekyll/scholar
+    - jekyll-scholar
     - jemoji
 
 # Jekyll-Scholar
