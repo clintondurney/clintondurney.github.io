@@ -4,7 +4,11 @@ permalink: /publications/
 title: publications
 ---
 
-<ol reversed style="--item-spacing: 1em;">
+<style>
+  ol.publications li { margin-bottom: 2em; }
+</style>
+
+<ol reversed class="publications">
   <li>Pandya, T., Zagorulya, M., Leung, M., <em>et al.</em>, and Swanton, C. (including <strong>Durney, C.H.</strong>) Plasma signals of lung tumour promotion stratify benefit for molecular cancer prevention. <em>Cell</em> (2026)<br>
   Press: <a href="https://www.nytimes.com/2026/06/04/well/lung-cancer-prevention.html?unlocked_article_code=1.nlA.22yd.lOSdAdPJuK8r&smid=url-share">The New York Times</a>, June 4, 2026</li>
 
