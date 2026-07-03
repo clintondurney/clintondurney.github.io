@@ -20,7 +20,7 @@ title: publications
 </style>
 
 <ol reversed class="publications">
-  <li> Fung, L., Joseph, B., Lo, T., <em>et al.</em> (including <strong>Durney, C.H.</strong>, Tawara, A.&dagger;) and Lim, E. Clinical and molecular correlates of digitally quantified anthracosis in lung tissue slides: Utility of an automated quantitative workflow. Accepted, <em>The Journal of Pathology: Clinical Research</em> (2026) <br>
+  <li> Fung, L., Joseph, B., Lo, T., <em>et al.</em> (including <strong>Durney, C.H.</strong>, Tawara, A.&dagger;) and Lim, E. Clinical and molecular correlates of digitally quantified anthracosis in lung tissue slides: Utility of an automated quantitative workflow. Accepted, <em>The Journal of Pathology: Clinical Research</em> (2026) <br></li>
 
   <li>Pandya, T., Zagorulya, M., Leung, M., <em>et al.</em> (including <strong>Durney, C.H.</strong>) and Swanton, C.  Plasma signals of lung tumour promotion stratify benefit for molecular cancer prevention. <em>Cell</em> (2026)<br>
   Press: <a href="https://www.nytimes.com/2026/06/04/well/lung-cancer-prevention.html?unlocked_article_code=1.nlA.22yd.lOSdAdPJuK8r&smid=url-share">The New York Times</a>, June 4, 2026<br>
