@@ -20,28 +20,30 @@ title: publications
 </style>
 
 <ol reversed class="publications">
-  <li>Pandya, T., Zagorulya, M., Leung, M., <em>et al.</em>, and Swanton, C. (including <strong>Durney, C.H.</strong>) Plasma signals of lung tumour promotion stratify benefit for molecular cancer prevention. <em>Cell</em> (2026)<br>
+  <li> Fung, L., Joseph, B., Lo, T., <em>et al.</em> (including <strong>Durney, C.H.</strong>, Tawara, A.&dagger;) and Lim, E. Clinical and molecular correlates of digitally quantified anthracosis in lung tissue slides: Utility of an automated quantitative workflow. Accepted, <em>The Journal of Pathology: Clinical Research</em> (2026) <br>
+
+  <li>Pandya, T., Zagorulya, M., Leung, M., <em>et al.</em> (including <strong>Durney, C.H.</strong>) and Swanton, C.  Plasma signals of lung tumour promotion stratify benefit for molecular cancer prevention. <em>Cell</em> (2026)<br>
   Press: <a href="https://www.nytimes.com/2026/06/04/well/lung-cancer-prevention.html?unlocked_article_code=1.nlA.22yd.lOSdAdPJuK8r&smid=url-share">The New York Times</a>, June 4, 2026<br>
   <a href="https://doi.org/10.1016/j.cell.2026.05.005" class="btn-doi">DOI</a>
   <a href="/assets/pdfs/PandyaEtal_2026_PlasmaSignalsLungTumorPrevention.pdf" class="btn-pdf">PDF</a></li>
 
-  <li><strong>Durney, C.H.</strong>, Tawara, A.&dagger;, Brauer, M., Atkar-Khattra, S., Myers, R., Meza, R., Lam, S., APEX: A Web-Based Tool for Assessing Long-Term Outdoor PM2.5 Exposure—Brief Report. <em>JTO Clinical and Research Reports</em> 7(5): 100975 (2026)<br>
+  <li><strong>Durney, C.H.</strong>, Tawara, A.&dagger;, Brauer, M., Atkar-Khattra, S., Myers, R., Meza, R., Lam, S. APEX: A web-based tool for assessing long-term outdoor PM2.5 exposure — Brief report. <em>JTO Clinical and Research Reports</em> 7(5): 100975 (2026)<br>
   <a href="https://doi.org/10.1016/j.jtocrr.2026.100975" class="btn-doi">DOI</a>
   <a href="/assets/pdfs/DurneyEtal_2026_APEXToolPM25Exposure.pdf" class="btn-pdf">PDF</a></li>
 
-  <li><strong>Durney, C.H.</strong>, Meza, R., Jimenez-Mendoza, E., Xu, K., Levy, D.T., Friedman, A.S., Recent trends in sales of electronic nicotine devices and oral nicotine pouches by flavour. <em>Tobacco Control</em> (2025)<br>
+  <li><strong>Durney, C.H.</strong>, Meza, R., Jimenez-Mendoza, E., Xu, K., Levy, D.T., Friedman, A.S. Recent trends in sales of electronic nicotine devices and oral nicotine pouches by flavour. <em>Tobacco Control</em> (2025)<br>
   <a href="https://doi.org/10.1136/tc-2025-059478" class="btn-doi">DOI</a>
   <a href="/assets/pdfs/DurneyEtal_2025_ENDSOralNicotineSalesByFlavour.pdf" class="btn-pdf">PDF</a></li>
 
-  <li>Wilson, M.J., McGregor, S., <strong>Durney, C.H.</strong>, Tomkins, M., Armand, J., Smith, R.S., Gray, J.E., Morris, R.J. and Fleming, A.J., Symplastic guard cell connections buffer pressure fluctuations to promote stomatal function in grasses. <em>New Phytologist</em>, 246: 192-203 (2025)<br>
+  <li>Wilson, M.J., McGregor, S., <strong>Durney, C.H.</strong>, Tomkins, M., Armand, J., Smith, R.S., Gray, J.E., Morris, R.J. and Fleming, A.J. Symplastic guard cell connections buffer pressure fluctuations to promote stomatal function in grasses. <em>New Phytologist</em>, 246: 192-203 (2025)<br>
   <a href="https://doi.org/10.1111/nph.70009" class="btn-doi">DOI</a>
   <a href="/assets/pdfs/WilsonEtal_2025_SymplasticGuardCellConnections.pdf" class="btn-pdf">PDF</a></li>
 
-  <li><strong>Durney, C.H.</strong>*, Wilson, M.J.*, McGregor, S., Armand, J., Smith, R.S., Gray, J.E., Morris, R.J., Fleming, A.J., Grasses exploit geometry to achieve improved guard cell dynamics. <em>Current Biology</em> 33.13 (2023)<br>
+  <li><strong>Durney, C.H.</strong>*, Wilson, M.J.*, McGregor, S., Armand, J., Smith, R.S., Gray, J.E., Morris, R.J., Fleming, A.J. Grasses exploit geometry to achieve improved guard cell dynamics. <em>Current Biology</em> 33.13 (2023)<br>
   <a href="https://doi.org/10.1016/j.cub.2023.05.051" class="btn-doi">DOI</a>
   <a href="/assets/pdfs/DurneyEtal_2023_GrassesGuardCellDynamics.pdf" class="btn-pdf">PDF</a></li>
 
-  <li>Ashour, D.J., <strong>Durney, C.H.</strong>, Herrero, V.J.P., Stevens, T.J., Feng, J.J., and Roper, K., Zasp52 strengthens whole embryo tissue integrity through supracellular actomyosin networks. <em>Development</em> 150.7 (2023)<br>
+  <li>Ashour, D.J., <strong>Durney, C.H.</strong>, Herrero, V.J.P., Stevens, T.J., Feng, J.J., and Roper, K. Zasp52 strengthens whole embryo tissue integrity through supracellular actomyosin networks. <em>Development</em> 150.7 (2023)<br>
   <a href="/assets/img/Dina_Cover_Image.jpg">Featured on issue cover</a><br>
   <a href="https://doi.org/10.1242/dev.201238" class="btn-doi">DOI</a>
   <a href="/assets/pdfs/AshourEtal_2023_Zasp52ActomyosinNetworks.pdf" class="btn-pdf">PDF</a></li>
@@ -63,7 +65,7 @@ title: publications
   <a href="https://doi.org/10.1088/1742-5468/2012/06/P06014" class="btn-doi">DOI</a>
   <a href="/assets/pdfs/DurneyEtal_2012_StochasticEvolutionFourSpecies.pdf" class="btn-pdf">PDF</a></li>
 
-  <li><strong>Durney, C.H.</strong>, Case, S.O., Pleimling, M., and Zia, R.K.P. Saddles, arrows, and spirals: deterministic trajectories in cyclic competition of four species. <em>Physical Review E</em> 83.5 (2011)<br>
+  <li><strong>Durney, C.H.</strong>, Case, S.O., Pleimling, M., and Zia, R.K.P. Saddles, arrows, and spirals: Deterministic trajectories in cyclic competition of four species. <em>Physical Review E</em> 83.5 (2011)<br>
   <a href="https://doi.org/10.1103/PhysRevE.83.051108" class="btn-doi">DOI</a>
   <a href="/assets/pdfs/DurneyEtal_2011_SaddlesArrowsSpirals.pdf" class="btn-pdf">PDF</a></li>
 
