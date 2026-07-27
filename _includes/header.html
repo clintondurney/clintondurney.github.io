@@ -1,34 +1,26 @@
 <header class="site-header">
-
   <div class="wrapper">
 
     {% if page.layout != "about" %}
     <span class="site-title">
-        {% assign name = site.name | split: ' ' %}
-        <strong>{{ name | first }}</strong> {{ name | last }}
+      {% assign name = site.name | split: ' ' %}
+      <strong>{{ name | first }}</strong> {{ name | last }}
     </span>
     {% endif %}
 
     <nav class="site-nav">
-
-      <div class="trigger">
-        <!-- About -->
-        <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">about</a>
-
-        <!-- Blog -->
-        <!-- 
-        <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a>
-        -->
-        <!-- Pages -->
-        {% for page in site.pages %}
-          {% if page.title and page.url != "/" %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
+      <ul class="nav-list">
+        {% for path in site.header_pages %}
+          {% assign page = site.pages | where: "path", path | first %}
+          {% if page.title %}
+            <li class="nav-item">
+              <a class="page-link" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+            </li>
           {% endif %}
         {% endfor %}
-
-      </div>
+      </ul>
     </nav>
 
   </div>
-
 </header>
+
