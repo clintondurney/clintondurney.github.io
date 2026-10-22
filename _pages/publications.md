@@ -20,6 +20,9 @@ title: publications
 </style>
 
 <ol reversed class="publications">
+  <li>Pasquinelli, M.M., <strong>Durney, C.H.</strong>, Hill, T., Atueyi, U., <em>et al.</em> and Weinberg, F. Brief Report: Validation of the Sybil lung cancer risk prediction model in a predominantly Black screening cohort. <em>Journal of Thoracic Oncology</em>, 106128 (2026)<br>
+  <a href="https://doi.org/10.1016/j.jtho.2026.106128" class="btn-doi">DOI</a></li>
+
   <li> Fung, L., Joseph, B., Lo, T., <em>et al.</em> (including <strong>Durney, C.H.</strong>, Tawara, A.&dagger;) and Lim, E. Clinical and molecular correlates of digitally quantified anthracosis in lung tissue slides: Utility of an automated quantitative workflow. <em>The Journal of Pathology: Clinical Research</em>, 12(4):e70110 (2026) <br>
   <a href="http://dx.doi.org/10.1002/2056-4538.70110" class="btn-doi">DOI</a>
   <a href="/assets/pdfs/FungEtal_2026_AnthracosisLungTissue.pdf" class="btn-pdf">PDF</a></li>
