@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Augusta's Star Chart</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky: #fff9f0;
+    --sun: #FFB830;
+    --moon: #7B6FD4;
+    --morning: #FF8C42;
+    --evening: #5B5EA6;
+    --green: #52C982;
+    --red: #FF6B6B;
+    --card: #ffffff;
+    --shadow: rgba(0,0,0,0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--sky);
+    min-height: 100vh;
+    padding: 20px;
+    background-image: 
+      radial-gradient(circle at 15% 20%, rgba(255,184,48,0.12) 0%, transparent 40%),
+      radial-gradient(circle at 85% 70%, rgba(123,111,212,0.1) 0%, transparent 40%);
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  header h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #3a3560;
+    line-height: 1;
+  }
+
+  header .subtitle {
+    font-size: 1.1rem;
+    color: #8885b0;
+    margin-top: 4px;
+    font-weight: 600;
+  }
+
+  .day-label {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .day-label input {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3a3560;
+    border: none;
+    border-bottom: 3px dashed #c5c3e8;
+    background: transparent;
+    text-align: center;
+    padding: 4px 12px;
+    outline: none;
+    width: 280px;
+  }
+
+  .day-label input::placeholder { color: #c5c3e8; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 28px;
+  }
+
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    header h1 { font-size: 2rem; }
+  }
+
+  .section {
+    background: var(--card);
+    border-radius: 24px;
+    padding: 22px;
+    box-shadow: 0 6px 24px var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+  }
+
+  .morning::before { background: linear-gradient(90deg, #FFB830, #FF8C42); }
+  .evening::before { background: linear-gradient(90deg, #7B6FD4, #5B5EA6); }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .section-icon {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .morning .section-title { color: var(--morning); }
+  .evening .section-title { color: var(--evening); }
+
+  .task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    margin-bottom: 8px;
+    background: #fafafa;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .task:hover { border-color: #e0e0f0; }
+
+  .task.done {
+    background: #f0fdf5;
+    border-color: #86efb0;
+  }
+
+  .task.missed {
+    background: #fff5f5;
+    border-color: #fca5a5;
+  }
+
+  .task-icon { font-size: 1.6rem; flex-shrink: 0; }
+
+  .task-info { flex: 1; }
+
+  .task-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3a3560;
+    line-height: 1.2;
+  }
+
+  .task-hint {
+    font-size: 0.75rem;
+    color: #9997bb;
+    font-weight: 600;
+    margin-top: 1px;
+  }
+
+  .task-buttons {
+    display: flex;
+    gap: 6px;
+  }
+
+  .btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.15s ease, opacity 0.15s;
+    opacity: 0.35;
+    background: #f0f0f8;
+  }
+
+  .btn:hover { transform: scale(1.15); opacity: 0.7; }
+  .btn.active { opacity: 1; transform: scale(1.1); }
+
+  .btn-yes { background: #dcfce7; }
+  .btn-no  { background: #fee2e2; }
+
+  /* Score Bar */
+  .score-section {
+    max-width: 900px;
+    margin: 0 auto 28px;
+    background: var(--card);
+    border-radius: 24px;
+    padding: 24px 28px;
+    box-shadow: 0 6px 24px var(--shadow);
+    text-align: center;
+  }
+
+  .score-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #3a3560;
+    margin-bottom: 14px;
+  }
+
+  .score-display {
+    font-family: 'Baloo 2', cursive;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #3a3560;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .score-bar-wrap {
+    background: #f0f0f8;
+    border-radius: 999px;
+    height: 22px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .score-bar {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.5s cubic-bezier(.34,1.56,.64,1), background 0.3s;
+    background: linear-gradient(90deg, #52C982, #86efac);
+    min-width: 0;
+  }
+
+  .threshold-marker {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 3px;
+    background: #FFB830;
+    left: 80%;
+    border-radius: 2px;
+  }
+
+  .threshold-label {
+    font-size: 0.78rem;
+    color: #9997bb;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  /* Reward section */
+  .reward-section {
+    max-width: 900px;
+    margin: 0 auto 28px;
+  }
+
+  .reward-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #3a3560;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .rewards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  @media (max-width: 500px) {
+    .rewards { grid-template-columns: 1fr; }
+  }
+
+  .reward-card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 20px 14px;
+    text-align: center;
+    box-shadow: 0 4px 16px var(--shadow);
+    border: 3px solid transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    opacity: 0.45;
+    position: relative;
+  }
+
+  .reward-card.unlocked {
+    opacity: 1;
+    animation: pop 0.4s cubic-bezier(.34,1.56,.64,1);
+  }
+
+  .reward-card.unlocked:hover {
+    border-color: var(--sun);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(255,184,48,0.2);
+  }
+
+  .reward-card.selected {
+    border-color: var(--sun);
+    background: #fffbf0;
+  }
+
+  @keyframes pop {
+    from { transform: scale(0.85); }
+    to   { transform: scale(1); }
+  }
+
+  .reward-emoji { font-size: 2.8rem; margin-bottom: 8px; }
+
+  .reward-name {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #3a3560;
+  }
+
+  .lock-icon {
+    position: absolute;
+    top: 10px; right: 12px;
+    font-size: 1rem;
+    opacity: 0.4;
+  }
+
+  .reward-card.unlocked .lock-icon { display: none; }
+
+  /* Confetti / celebration */
+  .celebration {
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--green);
+    margin-top: 12px;
+    min-height: 2rem;
+    transition: opacity 0.3s;
+  }
+
+  /* Reset btn */
+  .reset-btn {
+    display: block;
+    margin: 0 auto;
+    background: #f0f0f8;
+    color: #8885b0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .reset-btn:hover { background: #e2e2f4; }
+
+  .stars-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .star {
+    position: absolute;
+    font-size: 1.2rem;
+    opacity: 0.15;
+    animation: twinkle 3s infinite alternate;
+  }
+
+  @keyframes twinkle {
+    from { opacity: 0.1; transform: scale(1); }
+    to   { opacity: 0.25; transform: scale(1.2); }
+  }
+
+  .content { position: relative; z-index: 1; }
+</style>
+</head>
+<body>
+
+<div class="stars-bg" id="stars"></div>
+
+<div class="content">
+  <header>
+    <h1>⭐ Augusta's Star Chart ⭐</h1>
+    <div class="subtitle">Get your stars, pick your reward!</div>
+  </header>
+
+  <div class="day-label">
+    <input type="text" id="dayInput" placeholder="Write today's date here!" />
+  </div>
+
+  <div class="grid">
+    <!-- AFTER SCHOOL (left) -->
+    <div class="section evening">
+      <div class="section-header">
+        <div class="section-icon">🌙</div>
+        <div class="section-title">After School</div>
+      </div>
+      <div id="evening-tasks"></div>
+    </div>
+
+    <!-- BEFORE SCHOOL (right) -->
+    <div class="section morning">
+      <div class="section-header">
+        <div class="section-icon">☀️</div>
+        <div class="section-title">Before School</div>
+      </div>
+      <div id="morning-tasks"></div>
+    </div>
+  </div>
+
+  <!-- SCORE -->
+  <div class="score-section">
+    <div class="score-title">Augusta's Score Today</div>
+    <div class="score-display" id="scoreText">0 / 13</div>
+    <div class="score-bar-wrap">
+      <div class="score-bar" id="scoreBar" style="width:0%"></div>
+      <div class="threshold-marker"></div>
+    </div>
+    <div class="threshold-label">⚡ Reach the gold line (80%) to unlock your reward!</div>
+    <div class="celebration" id="celebration"></div>
+  </div>
+
+  <!-- REWARDS -->
+  <div class="reward-section">
+    <div class="reward-title">🎁 Pick Your Reward!</div>
+    <div class="rewards">
+      <div class="reward-card" id="reward-0" onclick="selectReward(0)">
+        <span class="lock-icon">🔒</span>
+        <div class="reward-emoji">🍬</div>
+        <div class="reward-name">Yummy Treat</div>
+      </div>
+      <div class="reward-card" id="reward-1" onclick="selectReward(1)">
+        <span class="lock-icon">🔒</span>
+        <div class="reward-emoji">📺</div>
+        <div class="reward-name">TV Time</div>
+      </div>
+      <div class="reward-card" id="reward-2" onclick="selectReward(2)">
+        <span class="lock-icon">🔒</span>
+        <div class="reward-emoji">📱</div>
+        <div class="reward-name">iPad Time</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="reset-btn" onclick="resetAll()">🔄 Start a New Day</button>
+  <br/>
+</div>
+
+<script>
+const morningTasks = [
+  { icon: '👗', name: 'Get Dressed', hint: 'Quick & happy, no fussing!' },
+  { icon: '🍳', name: 'Eat Breakfast', hint: 'Finish in time, good job eating!' },
+  { icon: '🪥', name: 'Brush Teeth', hint: 'No fighting, open wide!' },
+  { icon: '💇', name: 'Hair Done', hint: 'Sit still, looking beautiful!' },
+  { icon: '👟', name: 'Shoes On', hint: 'Shoes on all by yourself!' },
+  { icon: '🎒', name: 'Pack Backpack', hint: 'Everything ready to go!' },
+];
+
+const eveningTasks = [
+  { icon: '🍽️', name: 'Eat Dinner', hint: 'Finish in time, good job eating!' },
+  { icon: '🧸', name: 'Pick Up Toys', hint: 'Everything in its place!' },
+  { icon: '🛁', name: 'Bath Time', hint: 'Clean & fresh, no splashing drama!' },
+  { icon: '🚽', name: 'Use Bathroom', hint: 'All done before bed!' },
+  { icon: '🌙', name: 'Pajamas On', hint: 'Quick change, no sillies!' },
+  { icon: '🪥', name: 'Brush Teeth', hint: 'No fighting, open wide!' },
+  { icon: '🛏️', name: 'In Bed On Time', hint: 'In bed when 엄마 or Daddy says!' },
+];
+
+// state: null = not set, true = done, false = missed
+const state = {
+  morning: Array(morningTasks.length).fill(null),
+  evening: Array(eveningTasks.length).fill(null),
+};
+
+let rewardUnlocked = false;
+let selectedReward = null;
+
+function buildTasks(list, containerId, section) {
+  const container = document.getElementById(containerId);
+  list.forEach((task, i) => {
+    const div = document.createElement('div');
+    div.className = 'task';
+    div.id = `${section}-${i}`;
+    div.innerHTML = `
+      <div class="task-icon">${task.icon}</div>
+      <div class="task-info">
+        <div class="task-name">${task.name}</div>
+        <div class="task-hint">${task.hint}</div>
+      </div>
+      <div class="task-buttons">
+        <button class="btn btn-yes" id="${section}-yes-${i}" onclick="setTask('${section}',${i},true)" title="Done!">⭐</button>
+        <button class="btn btn-no"  id="${section}-no-${i}"  onclick="setTask('${section}',${i},false)" title="Not done">❌</button>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function setTask(section, i, value) {
+  // toggle off if clicking same
+  if (state[section][i] === value) {
+    state[section][i] = null;
+  } else {
+    state[section][i] = value;
+  }
+  updateUI(section, i);
+  updateScore();
+}
+
+function updateUI(section, i) {
+  const val = state[section][i];
+  const row = document.getElementById(`${section}-${i}`);
+  const yesBtn = document.getElementById(`${section}-yes-${i}`);
+  const noBtn  = document.getElementById(`${section}-no-${i}`);
+  row.classList.toggle('done',   val === true);
+  row.classList.toggle('missed', val === false);
+  yesBtn.classList.toggle('active', val === true);
+  noBtn.classList.toggle('active',  val === false);
+}
+
+function updateScore() {
+  const all = [...state.morning, ...state.evening];
+  const total = all.length;
+  const done  = all.filter(v => v === true).length;
+  const pct   = total > 0 ? done / total : 0;
+
+  document.getElementById('scoreText').textContent = `${done} / ${total}`;
+  document.getElementById('scoreBar').style.width = `${pct * 100}%`;
+  document.getElementById('scoreBar').style.background =
+    pct >= 0.8 ? 'linear-gradient(90deg, #52C982, #86efac)' :
+    pct >= 0.5 ? 'linear-gradient(90deg, #FFB830, #fcd34d)' :
+                 'linear-gradient(90deg, #FF6B6B, #fca5a5)';
+
+  const unlocked = pct >= 0.8;
+  if (unlocked && !rewardUnlocked) {
+    document.getElementById('celebration').textContent = '🎉 Amazing job Augusta!! Pick your reward! 🎉';
+  } else if (!unlocked) {
+    document.getElementById('celebration').textContent = '';
+    selectedReward = null;
+  }
+  rewardUnlocked = unlocked;
+
+  [0,1,2].forEach(r => {
+    const card = document.getElementById(`reward-${r}`);
+    card.classList.toggle('unlocked', unlocked);
+    if (!unlocked) card.classList.remove('selected');
+  });
+}
+
+function selectReward(i) {
+  if (!rewardUnlocked) return;
+  selectedReward = i;
+  [0,1,2].forEach(r => {
+    document.getElementById(`reward-${r}`).classList.toggle('selected', r === i);
+  });
+}
+
+function resetAll() {
+  if (!confirm('Start a brand new day? This will clear all the checkmarks!')) return;
+  state.morning.fill(null);
+  state.evening.fill(null);
+  morningTasks.forEach((_, i) => updateUI('morning', i));
+  eveningTasks.forEach((_, i) => updateUI('evening', i));
+  rewardUnlocked = false;
+  selectedReward = null;
+  document.getElementById('celebration').textContent = '';
+  updateScore();
+  document.getElementById('dayInput').value = '';
+}
+
+// Build tasks
+buildTasks(morningTasks, 'morning-tasks', 'morning');
+buildTasks(eveningTasks, 'evening-tasks', 'evening');
+updateScore();
+
+// Sprinkle stars in background
+const starsEl = document.getElementById('stars');
+const starChars = ['⭐','✨','🌟','💫'];
+for (let i = 0; i < 18; i++) {
+  const s = document.createElement('div');
+  s.className = 'star';
+  s.textContent = starChars[Math.floor(Math.random()*starChars.length)];
+  s.style.left = Math.random()*100 + '%';
+  s.style.top  = Math.random()*100 + '%';
+  s.style.animationDelay = (Math.random()*3) + 's';
+  s.style.fontSize = (0.8 + Math.random()*1.2) + 'rem';
+  starsEl.appendChild(s);
+}
+</script>
+</body>
+</html>
