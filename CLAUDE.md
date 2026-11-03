@@ -31,4 +31,4 @@ This is a personal academic website built on the [al-folio](https://github.com/a
 
 **Styles:** SCSS lives in `_sass/`. Theme color is controlled by `$theme-color` in `_sass/_variables.scss`.
 
-**Deployment:** The `bin/deploy` script builds the site and force-pushes the `_site/` contents to the `gh-pages` branch. The site is hosted on GitHub Pages.
+**Deployment:** Pushing to `master` triggers the GitHub Actions workflow in `.github/workflows/deploy.yml`, which runs `jekyll build` and publishes `_site/` to the `gh-pages` branch. The site is hosted on GitHub Pages. To deploy, commit changes and `git push origin master`.
